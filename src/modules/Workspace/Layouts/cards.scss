@@ -79,10 +79,12 @@ body.anp-card-layout {
     }
 
     .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-        border: none;
+        border: var(--tab-outline-width) solid var(--tab-outline-color);
+        border-bottom: none;
         margin: var(--anp-card-layout-padding, 10px);
         margin-bottom: 0;
-        background-color: transparent;
+        border-radius: var(--anp-card-radius, var(--radius-xl)) var(--anp-card-radius, var(--radius-xl)) 0 0;
+        background-color: var(--card-foreground-color);
     }
 
     .workspace-ribbon.mod-left {

@@ -1,4 +1,4 @@
-/*---------------COLORFUL FRAME--------------*/
+
 /*----------------------------------
 This feature is inspired by Kepano's Minimal theme: https://github.com/kepano/obsidian-minimal
 None of the original code was used, and was written from scratch.
@@ -55,7 +55,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
         &.anp-card-layout .workspace-tabs.mod-top,
         &.anp-card-layout .sidebar-toggle-button,
         &.anp-card-layout .workspace-ribbon.mod-left:before {
-            --tab-container-background: rgba(var(--anp-colorful-frame-color, var(--ctp-accent)), var(--anp-colorful-frame-opacity, 1));
+            --tab-container-background: rgba(var(--anp-colorful-frame-color, var(--ctp-accent)), 1);
             --titlebar-background: rgba(var(--anp-colorful-frame-color, var(--ctp-accent)), var(--anp-colorful-frame-opacity, 1));
         }
 
@@ -296,6 +296,18 @@ body.anp-colorful-frame.anp-card-layout .workspace,
     --icon-color-hover: var(--background-secondary-alt);
     --icon-color-active: var(--background-secondary-alt);
     --icon-color-focused: var(--background-secondary-alt);
+    // Lazy fix for vault icons
+    .workspace-sidedock-vault-profile {
+      --tab-text-color: initial;
+      --tab-text-color-focused: initial;
+      --tab-text-color-focused-active: initial;
+      --tab-text-color-focused-highlighted: initial;
+      --tab-text-color-focused-active-current: initial;
+      --icon-color: initial;
+      --icon-color-hover: initial;
+      --icon-color-active: initial;
+      --icon-color-focused: initial;
+    }
 }
 
 .anp-colorful-frame.anp-card-layout:not(.anp-card-layout-filebrowser) {
